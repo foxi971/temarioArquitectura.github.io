@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>
+			modos de direccionamiento
+		</title>
+	</head>
+	<body>
+		<div style ="background-image:url('imagenes/fondo2.jpg');
+			position:fixed; top:0; bottom:0; right:0; left:0;
+			background-repeat:no-repeat;
+			background-size:cover; 
+			background-attachment:fixed;
+			z-index:-1"> 
+			</div>
+			<p style="text-align:justify; font-style:Bold; color: white;">
+			Distintas formas que tiene la arquitectura para especificar la ubicación de
+los operandos.
+
+Objetivos:
+- Reducir el número de bits para especificar un operando en memoria.
+- Dar soporte a las estructuras de datos de alto nivel.
+
+Pueden ser:
+- Para datos, sobre los que opera la instrucción.
+- Para instrucciones, especifica la dirección de la siguiente instrucción
+a ejecutar (en instrucciones de control).
+
+2.4.1. Necesidades de direccionamiento
+Dónde puede estar un operando:
+- En la propia instrucción
+- En un registro - En memoria
+</p>
+<img src="imagenes/d1.png" 
+		style="height:300px; width:300px;">
+		</a>
+<p style="text-align:justify; font-style:Bold; color: white;">
+
+Direccionamiento por registro.
+El campo de dirección especifica un registro donde está el operando.
+</p>
+<img src="imagenes/d2.png" 
+		style="height:300px; width:300px;">
+		</a>
+<p style="text-align:justify; font-style:Bold; color: white;">
+
+Direccionamiento Inmediato.
+El operando está en la instrucción.
+</p>
+<img src="imagenes/d3.png" 
+		style="height:300px; width:300px;">
+		</a>
+<p style="text-align:justify; font-style:Bold; color: white;">
+
+Direccionamiento directo.
+El campo de dirección contiene la dirección efectiva del operando.
+</p>
+<img src="imagenes/d4.png" 
+		style="height:300px; width:300px;">
+		</a>
+<p style="text-align:justify; font-style:Bold; color: white;">
+
+Direccionamiento indirecto por registro.
+Se especifica un registro donde está la dirección del operando.
+</p>
+<img src="imagenes/d5.png" 
+		style="height:300px; width:300px;">
+		</a>
+<p style="text-align:justify; font-style:Bold; color: white;">
+
+Direccionamiento indirecto por memoria.
+El campo de direcciones contiene la dirección de una palabra donde está
+la dirección del operando.
+</p>
+<img src="imagenes/d6.png" 
+		style="height:300px; width:300px;">
+		</a>
+<p style="text-align:justify; font-style:Bold; color: white;">
+
+Direccionamiento base + desplazamiento.
+Combina posibilidades del directo (facilidad de uso) y del indirecto por
+registro (menos bits para especificar dirección). Habrá que especificar un
+registro y un valor. La suma del contenido del registro y el valor es la dirección
+del operando.
+</p>
+<img src="imagenes/d7.png" 
+		style="height:300px; width:300px;">
+		</a>
+<p style="text-align:justify; font-style:Bold; color: white;">
+
+Direccionamiento indexado.
+La dirección del operando es la suma de dos registros.
+			</p>
+			<img src="imagenes/d8.png" 
+		style="height:300px; width:300px;">
+		</a>
+	</body>
+
+</html>

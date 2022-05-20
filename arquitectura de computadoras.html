@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>
+			arquitectura de computadora 
+		</title>
+	</head>
+	<body>
+		<div style ="background-image:url('imagenes/fondo2.jpg');
+			position:fixed; top:0; bottom:0; right:0; left:0;
+			background-repeat:no-repeat;
+			background-size:cover; 
+			background-attachment:fixed;
+			z-index:-1"> 
+				
+			</div>
+				
+				<p style="text-align:justify; font-style:Bold; color: white;">
+				Arquitectura de Computadoras.
+Arquitectura de computadoras. Es el diseño y la
+organización de un sistema para un equipo de cómputo.
+Es un modelo y descripción de cada función, así como los
+requerimientos y las implementaciones de diseño para varias
+partes del equipo de cómputo.
+Principalmente enfocamos en la Unidad Central de
+Procesamiento lo conocemos como (CPU) el cual trabaja
+internamente y accede a las direcciones de memoria y a los
+sistemas de entrada salida, periféricos.
+También suele definirse como la selección e interconexión
+de los componentes de hardware para crear computadoras
+según los requerimientos de funcionalidad, rendimiento y
+costo.
+El equipo de cómputo recibe y envía la información a través
+de los periféricos por medio de los canales de distribución o
+buses (cableado físico de interconexión).
+
+El CPU se encarga de procesar la información que le llega al
+equipo de cómputo.
+El intercambio de información se tiene que hacer con los
+periféricos y el CPU.
+</p>
+
+
+<p style="text-align:justify; font-style:Bold; color: white;">
+Todas aquellas unidades de un sistema exceptuando el CPU
+se denomina periférico, por lo que el equipo de cómputo
+tiene dos partes bien diferenciadas, que son: el CPU (se
+encarga de ejecutar programas y que está compuesta por la
+memoria principal, la (ALU) Unidad Aritmética Lógica y la
+(UC) unidad de control) y los periféricos (que pueden ser de
+entrada, salida, entrada-salida y las interconexiones).
+
+Modelos de Arquitectura Clásicas.
+Estas arquitecturas se desarrollaron en las primeras
+computadoras electromecánicas y de tubos de vacío.
+Hay dos arquitecturas distintas relacionadas con el uso y
+distribución de la memoria: Arquitectura de Jonh Von
+Neumman y Arquitectura Harvard.
+
+Arquitectura Von Neumann
+Tradicionalmente los sistemas con microprocesadores se
+basan en esta arquitectura, en la cual la unidad central de
+proceso (CPU), está conectada a una memoria principal
+única (casi siempre sólo RAM) donde se guardan las
+instrucciones del programa y los datos. A dicha memoria se
+accede a través de un sistema interconexión de buses único
+(control, direcciones y datos).
+</p>
+
+<p style="text-align:justify; font-style:Bold; color: white;">
+
+En un sistema con arquitectura Von Neumann el tamaño de
+la unidad de datos o instrucciones está fijado por el ancho
+del bus que comunica la memoria con la CPU. Así un
+microprocesador de 8 bits con un bus de 8 bits, tendrá que
+manejar datos e instrucciones de una o más unidades de 8
+bits (bytes) de longitud.
+Si tiene que acceder a una instrucción o dato de más de un
+byte de longitud, tendrá que realizar más de un acceso a la
+memoria.
+El tener un único bus hace que el microprocesador sea más
+lento en su respuesta, ya que no puede buscar en memoria
+una nueva instrucción mientras no finalicen las
+transferencias de datos de la instrucción anterior.
+
+Las computadoras digitales convencionales presentan un
+aspecto Von Neumann. Este modelo consta de cinco
+componentes principales.
+Unidad de Memoria.
+Unidad de Entrada/Salida.
+Unidad de Control. Incluidos CPU.
+Unidad Aritmética Lógica. Incluida en CPU.
+Registros de Programas. Incluidos en CPU.
+
+</p>
+		<img src="imagenes/buses1.png" 
+		style="height:200px; width:500px;">
+		</a>
+
+<p style="text-align:justify; font-style:Bold; color: white;">
+Modelo Von Neumann.
+Las instrucciones provenientes del sistema de entrada, son
+almacenados por la memoria, procesados por la ALU bajo la
+dirección de la unidad de control. Los resultados obtenidos
+son enviados a la unidad de salida.
+El programa almacenado es lo más importante en el modelo.
+Los programas se almacenan en la memoria del equipo junto
+con los datos a procesar.
+En las computadoras de programa almacenado, el programa
+puede manipularse como si se tratara de datos. Este concepto
+da origen a los compiladores, sistemas operativos y es la
+base de la gran versatilidad de las computadoras modernas.
+Limitaciones Von Neumann
+La longitud de las instrucciones por el bus de datos, que hace
+que el microprocesador tenga que realizar varios accesos a
+memoria para buscar instrucciones complejas.
+
+La velocidad de operación a causa del bus único para datos e
+instrucciones que no deja acceder simultáneamente a unos y
+otras, lo cual impide superponer ambos tiempos de acceso.
+
+</p>
+
+		
+
+
+<p style="text-align:justify; font-style:Bold; color: white;">
+Modelo Harvard
+Esta arquitectura utiliza los Micro controladores, tiene la
+unidad central de proceso (CPU) conectada a dos memorias
+(una con las instrucciones y otra con los datos) por medio de
+dos buses diferentes.
+Una de las memorias contiene solamente las instrucciones
+del programa (Memoria de Programa), y la otra sólo
+almacena datos (Memoria de Datos).
+Ambos buses son totalmente independientes lo que permite
+que la CPU pueda acceder de forma independiente y
+simultánea a la memoria de datos y a la de instrucciones.
+Como los buses son independientes estos pueden tener
+distintos contenidos en la misma dirección y también distinta
+longitud.
+También la longitud de los datos y las instrucciones puede
+ser distinta, lo que optimiza el uso de la memoria en general.
+Para un procesador de Set de Instrucciones Reducido, o
+RISC (Reduced Instrucción Set Computer), el set de
+instrucciones y el bus de memoria de programa pueden
+
+diseñarse de tal manera que todas las instrucciones tengan
+una sola posición de memoria de programa de longitud.
+Además, al ser los buses independientes, el CPU puede
+acceder a los datos para completar la ejecución de una
+instrucción, y al mismo tiempo leer la siguiente instrucción a
+ejecutar.
+</p>
+		<img src="imagenes/buses2.png" 
+		style="height:200px; width:500px;">
+		</a>
+<p style="text-align:justify; font-style:Bold; color: white;">
+Modelo Harvard.
+El tamaño de las instrucciones no está relacionado con el de
+los datos, y por lo tanto puede ser optimizado para que
+cualquier instrucción ocupe una sola posición de memoria de
+programa, logrando así mayor velocidad y menor longitud de
+programa.
+El tiempo de acceso a las instrucciones puede superponerse
+con el de los datos, logrando una mayor velocidad en cada
+operación.
+La principal desventaja de esta arquitectura; el bus de datos
+y direcciones único se convierte en un cuello de botella por
+el cual debe pasar toda la información que se lee de o se
+
+escribe a la memoria, obligando a que todos los accesos a
+esta sean secuenciales.
+Limita el grado de paralelismo (acciones que se pueden
+realizar al mismo tiempo) y por lo tanto, el desempeño de la
+computadora.
+				</p>
+	</body>
+
+</html>
